@@ -1,4 +1,4 @@
-/* Bring back Noto Sans */
+/* Bring back the old font */
 @import url(https://cdn.statically.io/gh/Overimagine1/old-discord-font/main/source.min.css);
 
 /* Nitro gift button */
@@ -63,6 +63,7 @@ div[class^="selectionGroup_"]:has(div[class^="tryItOutButtons"]) + div { display
 /* Change bot tags to read BOT again */
 span[class^="botText_"] { display: none; }
 span[class^="botTag_"]:after { content: "BOT"; }
+span[class^="botTagRegular_"]:after { content: "BOT"; }
 
 /* User badges */
 div[class^="tags_"] div[class^="container_"] { display: none; }
@@ -102,13 +103,27 @@ div[class^="profileEffects_"] { display: none; }
 
 /* Server banners */
 div[class^="animatedContainer_"] { display: none; }
-ul[class^="content_"] > div[aria-hidden="true"] { display: none; }
+div#channels > ul[class^="content_"] > div[aria-hidden="true"] { display: none; }
+div#channels > ul[class^="content_"] > div[class^="sectionDivider_"] { display: none; }
 
 /* Hide Nitro emoji in picker (WIP) */
-div[class*="categorySectionNitroLocked_"] { display: none !important; }
-div[class^="nitroTopDividerContainer_"] { display: none !important; }
-div[class^="upsellContainer_"] { display: none !important; }
+div[class*="categorySectionNitroLocked_"] { display: none; }
+div[class^="nitroTopDividerContainer_"] { display: none; }
+div[class^="upsellContainer_"] { display: none; }
 div:not([class]):has(div[class^="categoryItemLockIconContainer_"]) { display: none; }
-li[role="gridcell"]:has(div[class^="emojiLockIconContainer_"]) {
-    display: none;
-}
+li[role="gridcell"]:has(div[class^="emojiLockIconContainer_"]) { display: none; }
+
+/* Hide sticker tab in GIF/emoji selector */
+button#sticker-picker-tab { display: none; }
+
+/* Hide activities */
+div[class^="biteSizeOverlayBackground_"] { display: none; }
+div[aria-label="Activity"] { display: none; }
+div[class^="overlayBackground_"]:has(> div[class^="actions_"]) { display: none; }
+div[class^="activityText_"]:has(strong) { display: none; }
+
+/* Hide bot "Add App" button in profile */
+div[class^="biteSizeInner_"] div[class^="buttons_"] button[class^="button_"] { display: none; }
+
+/* Hide bot commands in profile */
+div[class^="biteSizeInner_"] div[class^="body_"] section[class^="section_"]:has(ul) { display: none; }
