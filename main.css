@@ -18,7 +18,7 @@ h3[class^="membersGroup_"]:has(span[class^="headerContainer_"]) { display: none;
 div[class^="members_"] div:not([class]):has(div[class^="infoSection_"]) { display: none; }
 
 /* Guild tags */
-span[class^="clickable_"] span[class^="chipletContainerInner_"] { display: none; }
+span[class^="chipletContainerInner_"] { display: none; }
 
 /* New member badge */
 span:has(> div[class^="newMemberBadge_"]) { display: none; }
@@ -72,7 +72,7 @@ div[class^="reactionSuggestion_"] { display: none; }
 div[class^="reactionSuggestion_"] + div { display: none; }
 
 /* Server boost progress bar */
-li:has(div[data-list-item-id^="channels___boosts_"]) { display: none; }
+li:has(div[data-list-item-id^="channels___boosts"]) { display: none; }
 
 /* Server icons (like "community server") */
 div[class^="guildIconV2Container_"] { display: none; }
@@ -81,4 +81,34 @@ div[class^="guildIconV2Container_"] { display: none; }
 li:has(div[class^="link_"]) { display: none; }
 li:has(div[class^="link_"]) + div { display: none; }
 
-/* TODO: remove profile animations and themes */
+/* Discover Servers button */
+ul[data-list-id="guildsnav"] > div > div[class^="listItem_"]:has(div[class^="circleIconButton_"]) { display: none; }
+
+/* Boost Server menu option */
+div:has(> div#guild-header-popout-premium-subscribe) { display: none; }
+div:has(> div#guild-header-popout-premium-subscribe) + div { display: none; }
+
+/* Server Booster badge */
+div:has(> svg[class^="premiumIcon_"]) { display: none; }
+
+/* Avatar decorations */
+svg[class^="avatarDecoration_"] { display: none; }
+
+/* Profile banners */
+div[class^="banner_"] { background-image: none !important; }
+
+/* Profile animations */
+div[class^="profileEffects_"] { display: none; }
+
+/* Server banners */
+div[class^="animatedContainer_"] { display: none; }
+ul[class^="content_"] > div[aria-hidden="true"] { display: none; }
+
+/* Hide Nitro emoji in picker (WIP) */
+div[class*="categorySectionNitroLocked_"] { display: none !important; }
+div[class^="nitroTopDividerContainer_"] { display: none !important; }
+div[class^="upsellContainer_"] { display: none !important; }
+div:not([class]):has(div[class^="categoryItemLockIconContainer_"]) { display: none; }
+li[role="gridcell"]:has(div[class^="emojiLockIconContainer_"]) {
+    display: none;
+}
