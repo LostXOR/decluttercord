@@ -62,8 +62,23 @@ div[class^="selectionGroup_"]:has(div[class^="tryItOutButtons"]) + div { display
 
 /* Change bot tags to read BOT again */
 span[class^="botText_"] { display: none; }
-span[class^="botTag_"]:after {
-    content: "BOT";
-}
+span[class^="botTag_"]:after { content: "BOT"; }
 
-/* TODO: remove profile animations */
+/* User badges */
+div[class^="tags_"] div[class^="container_"] { display: none; }
+
+/* Suggested reactions on message hover */
+div[class^="reactionSuggestion_"] { display: none; }
+div[class^="reactionSuggestion_"] + div { display: none; }
+
+/* Server boost progress bar */
+li:has(div[data-list-item-id^="channels___boosts_"]) { display: none; }
+
+/* Server icons (like "community server") */
+div[class^="guildIconV2Container_"] { display: none; }
+
+/* Browse Channels button */
+li:has(div[class^="link_"]) { display: none; }
+li:has(div[class^="link_"]) + div { display: none; }
+
+/* TODO: remove profile animations and themes */
