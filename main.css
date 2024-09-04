@@ -116,7 +116,7 @@ li[role="gridcell"]:has(div[class^="emojiLockIconContainer_"]) { display: none; 
 button#sticker-picker-tab { display: none; }
 
 /* Hide activities */
-div[class^="biteSizeOverlayBackground_"] { display: none; }
+div[class^="body_"] > div[class^="biteSizeOverlayBackground_"] { display: none; }
 div[aria-label="Activity"] { display: none; }
 div[class^="overlayBackground_"]:has(> div[class^="actions_"]) { display: none; }
 div[class^="activityText_"]:has(strong) { display: none; }
