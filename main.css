@@ -128,3 +128,7 @@ div[class^="messageIconButton_"] + button { display: none; }
 /* Hide bot commands in profile */
 div[class^="biteSizeInner_"] > div[class^="body_"] > section[class^="section_"]:has(ul) { display: none; }
 div[class^="userProfileModalInner_"] > div[class^="body_"] section[class^="section_"]:has(ul) { display: none; }
+
+/* Hide status thought bubble (still shows statuses) */
+div[class^="statusBubbleOuter_"]::before { display: none; }
+div[class^="statusBubbleOuter_"]::after { display: none; }
