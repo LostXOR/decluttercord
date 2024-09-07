@@ -120,6 +120,7 @@ div[class^="body_"] > div[class^="biteSizeOverlayBackground_"] { display: none; 
 div[aria-label="Activity"] { display: none; }
 div[class^="overlayBackground_"]:has(> div[class^="actions_"]) { display: none; }
 div[class^="activityText_"]:has(strong) { display: none; }
+div[class^="activity_"] { display: none; }
 
 /* Hide bot "Add App" button in profile */
 div[class^="biteSizeInner_"] div[class^="buttons_"] > button[class^="button_"] { display: none; }
