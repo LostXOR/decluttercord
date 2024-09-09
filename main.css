@@ -103,7 +103,7 @@ div[class^="profileEffects_"] { display: none; }
 
 /* Server banners */
 div[class^="animatedContainer_"] { display: none; }
-ul[aria-label="Channels"]:has(div[style="height: 84px;"]) { margin-top: -84px; }
+div#channels > ul:has(div[style="height: 84px;"]) { margin-top: -84px; }
 
 /* Hide Nitro emoji in picker (WIP) */
 div[class*="categorySectionNitroLocked_"] { display: none; }
