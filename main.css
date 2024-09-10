@@ -41,6 +41,17 @@ div[class^="container_"]:has(div[class^="artContainer_"]) { display: none; }
 /* Profile editor Nitro advertisement */
 div[class^="premiumFeatureBorder_"] { display: none; }
 
+/* Clickable Nitro prompt on profile banner */
+foreignObject > div[class^="clickable_"]:has(> h3[class^="text-sm/medium_"]) { display: none; }
+
+/* Change Decoration avatar change option */
+div#user-settings-change-avatar-change-avatar-decoration { display: none; }
+
+/* GIF as avatar option */
+div[class^="imagePickerContainer_"] > div[class^="optionBox_"]:first-child { margin-right: 0px; }
+div[class^="imagePickerContainer_"] > div[class^="optionBox_"]:last-child { display: none; }
+div[class^="root_"]:has(div[class^="imagePickerContainer_"]) { width: 100%; }
+
 /* Nitro settings (yes this is messy, no I don't know how to do it better) */
 div[class^="side_"] > div:has(+ div[class^="premiumTab_"]) { display: none; }
 div[class^="side_"] > div[class^="premiumTab_"] { display: none; }
@@ -105,31 +116,44 @@ div[class^="profileEffects_"] { display: none; }
 div[class^="animatedContainer_"] { display: none; }
 div#channels > ul:has(div[style="height: 84px;"]) { margin-top: -84px; }
 
-/* Hide Nitro emoji in picker (WIP) */
+/* Nitro emoji in picker (WIP) */
 div[class*="categorySectionNitroLocked_"] { display: none; }
 div[class^="nitroTopDividerContainer_"] { display: none; }
 div[class^="upsellContainer_"] { display: none; }
 div:not([class]):has(div[class^="categoryItemLockIconContainer_"]) { display: none; }
 li[role="gridcell"]:has(div[class^="emojiLockIconContainer_"]) { display: none; }
 
-/* Hide sticker tab in GIF/emoji selector */
+/* Sticker tab in GIF/emoji selector */
 button#sticker-picker-tab { display: none; }
 
-/* Hide activities */
+/* Activities */
 div[class^="body_"] > div[class^="biteSizeOverlayBackground_"] { display: none; }
 div[aria-label="Activity"] { display: none; }
 div[class^="overlayBackground_"]:has(> div[class^="actions_"]) { display: none; }
 div[class^="activityText_"]:has(strong) { display: none; }
 div[class^="activity_"] > svg { display: none; }
 
-/* Hide bot "Add App" button in profile */
+/* Bot "Add App" button in profile */
 div[class^="biteSizeInner_"] div[class^="buttons_"] > button[class^="button_"] { display: none; }
 div[class^="messageIconButton_"] + button { display: none; }
 
-/* Hide bot commands in profile */
+/* Bot commands in profile */
 div[class^="biteSizeInner_"] > div[class^="body_"] > section[class^="section_"]:has(ul) { display: none; }
 div[class^="userProfileModalInner_"] > div[class^="body_"] section[class^="section_"]:has(ul) { display: none; }
 
-/* Hide status thought bubble (still shows statuses) */
+/* Status thought bubble (still shows statuses) */
 div[class^="statusBubbleOuter_"]::before { display: none; }
 div[class^="statusBubbleOuter_"]::after { display: none; }
+
+/* File upload Nitro prompt */
+div[class^="contentContainer_"] > div[class^="bodyContent_"]:has(> h2) > div > div > div { display: none; }
+div[class^="root_"]:has(div[class^="artContainer_"]) { width: 100%; }
+div[class^="flex_"] > div[class^="primaryActions_"] { display: none; }
+
+/* Character count Nitro prompt */
+div[class^="characterCount_"] > div[class^="root_"] { display: none; }
+div[class^="contentContainer_"] > div[class^="bodyContent_"]:has(> h2) > div > p:last-child { display: none; }
+div[class^="root_"] > div[class^="artContainer_"] > img { display: none; }
+div[class^="root_"] { padding-top: 50px; min-height: 1px !important; }
+
+/* TODO: Nitro borders and GIF icon and animated profile pictures in profiles */
