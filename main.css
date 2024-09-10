@@ -43,6 +43,7 @@ div[class^="premiumFeatureBorder_"] { display: none; }
 
 /* Clickable Nitro prompt on profile banner */
 foreignObject > div[class^="clickable_"]:has(> h3[class^="text-sm/medium_"]) { display: none; }
+foreignObject > div[class^="banner_"] > div[class^="clickable_"]:has(> h3[class^="text-sm/medium_"]) { display: none; }
 
 /* Change Decoration avatar change option */
 div#user-settings-change-avatar-change-avatar-decoration { display: none; }
