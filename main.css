@@ -147,14 +147,36 @@ div[class^="statusBubbleOuter_"]::before { display: none; }
 div[class^="statusBubbleOuter_"]::after { display: none; }
 
 /* File upload Nitro prompt */
+div[class^="root_"] > div[class^="artContainer_"] > img { display: none; }
 div[class^="contentContainer_"] > div[class^="bodyContent_"]:has(> h2) > div > div > div { display: none; }
 div[class^="root_"]:has(div[class^="artContainer_"]) { width: 100%; }
-div[class^="flex_"] > div[class^="primaryActions_"] { display: none; }
+div[class^="flex_"]:has(button[class*="tier2Gradient_"]) { display: none; }
 
 /* Character count Nitro prompt */
 div[class^="characterCount_"] > div[class^="root_"] { display: none; }
 div[class^="contentContainer_"] > div[class^="bodyContent_"]:has(> h2) > div > p:last-child { display: none; }
-div[class^="root_"] > div[class^="artContainer_"] > img { display: none; }
-div[class^="root_"] { padding-top: 50px; min-height: 1px !important; }
+div[class^="flex_"]:has(button[class*="colorGreen_"]) > div[class^="primaryActions_"] { display: none; }
+div[class^="root_"]:has(button[class*="colorGreen_"]) { padding-top: 50px; min-height: 1px !important; }
+div[class^="hoverButton_"]:has(> div[class^="lottieIcon_"]) { display: none; }
 
-/* TODO: Nitro borders and GIF icon and animated profile pictures in profiles */
+/* Disable GIFs and GIF tag in profiles */
+img[src*="gif"] { display: none; }
+div[class^="gifTag_"] { display: none; }
+
+/* Disable custom profile theme styling (WIP, doesn't fully work yet) */
+div[class^="biteSizeOuter_"] {
+    padding: 0px !important;
+    --profile-gradient-primary-color: var(--background-secondary-alt) !important;
+    --profile-gradient-secondary-color: var(--background-secondary-alt) !important;
+    --profile-gradient-overlay-color: rgba(0, 0, 0, 0) !important;
+    --profile-gradient-button-color: var(--button-secondary-background) !important;
+    --profile-avatar-border-color: var(--background-secondary-alt) !important;
+    --profile-body-background-color: var(--background-floating) !important;
+    --profile-body-background-hover: var(--background-modifier-hover) !important;
+    --profile-body-divider-color: var(--background-modifier-accent) !important;
+    --profile-body-border-color: var(--border-faint) !important;
+    --profile-message-input-border-color: var(--background-modifier-accent) !important;
+    --profile-note-background-color: var(--background-tertiary) !important;
+    --profile-role-pill-background-color: var(--background-secondary-alt) !important;
+    --profile-role-pill-border-color: var(--interactive-normal) !important;
+}
