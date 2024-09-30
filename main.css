@@ -81,8 +81,8 @@ span[class^="botTagRegular_"]:after { content: "BOT"; }
 div[class^="tags_"] div[class^="container_"] { display: none; }
 
 /* Suggested reactions on message hover */
-div[class^="reactionSuggestion_"] { display: none; }
-div[class^="reactionSuggestion_"] + div { display: none; }
+div[class^="hoverBarButton_"]:has(div.emoji) { display: none; }
+div[class^="hoverBarButton_"]:has(div.emoji) + div { display: none; }
 
 /* Server boost progress bar */
 li:has(div[data-list-item-id^="channels___boosts"]) { display: none; }
