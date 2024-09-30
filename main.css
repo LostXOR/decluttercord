@@ -183,3 +183,6 @@ div[class^="biteSizeOuter_"] {
 
 /* Hide Super Reactions (WIP, hides all reactions on any message with super reactions) */
 div[id^="message-accessories-"]:has(div[class^="burstGlow_"]) { display: none; }
+
+/* Hide Activities button in VCs */
+div[class^="actionButtons_"] > button:nth-child(3) { display: none; }
