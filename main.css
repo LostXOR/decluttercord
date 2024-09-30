@@ -180,3 +180,6 @@ div[class^="biteSizeOuter_"] {
     --profile-role-pill-background-color: var(--background-secondary-alt) !important;
     --profile-role-pill-border-color: var(--interactive-normal) !important;
 }
+
+/* Hide Super Reactions (WIP, hides all reactions on any message with super reactions) */
+div[id^="message-accessories-"]:has(div[class^="burstGlow_"]) { display: none; }
