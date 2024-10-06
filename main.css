@@ -2,166 +2,180 @@
 @import url(https://cdn.statically.io/gh/Overimagine1/old-discord-font/main/source.min.css);
 
 /* Nitro gift button */
-div[class^="channelBottomBarArea_"] div[class^="buttons_"] > button { display: none; }
+div[class^="channelBottomBarArea_"] div[class^="buttons_"] > div[class^="container_"] > button,
 
 /* Sticker button */
-div[class^="channelBottomBarArea_"] div[class^="buttons_"] > :nth-child(3) { display: none; }
+div[class^="channelBottomBarArea_"] div[class^="buttons_"] > :nth-child(3),
 
 /* Quest popup */
-div[class^="sidebar_"] section[class^="panels_"] div[class^="mask_"] { display: none; }
+div[class^="sidebar_"] section[class^="panels_"] div[class^="mask_"],
 
 /* App launcher */
-div[class^="channelAppLauncher_"] { display: none; }
+div[class^="channelAppLauncher_"],
 
 /* Member list game activities */
-h3[class^="membersGroup_"]:has(span[class^="headerContainer_"]) { display: none; }
-div[class^="members_"] div:not([class]):has(div[class^="infoSection_"]) { display: none; }
+h3[class^="membersGroup_"]:has(span[class^="headerContainer_"]),
+div[class^="members_"] div:not([class]):has(div[class^="infoSection_"]),
 
 /* Guild tags */
-span[class^="chipletContainerInner_"] { display: none; }
+span[class^="chipletContainerInner_"],
 
 /* New member badge */
-span:has(> div[class^="newMemberBadge_"]) { display: none; }
+span:has(> div[class^="newMemberBadge_"]),
 
 /* Nitro tab */
-li:has(a[href="/store"]) { display: none; }
+li:has(a[href="/store"]),
 
 /* Shop */
-li:has(a[href="/shop"]) { display: none; }
+li:has(a[href="/shop"]),
 
 /* Profile editor avatar decoration setting */
-div[class^="profileCustomizationSection_"] div[class^="sectionsContainer_"] div[class^="customizationSection_"]:nth-child(4) { display: none; }
+div[class^="profileCustomizationSection_"] div[class^="sectionsContainer_"] div[class^="customizationSection_"]:nth-child(4),
 
 /* Profile editor effect setting */
-div[class^="profileCustomizationSection_"] div[class^="sectionsContainer_"] div[class^="customizationSection_"]:nth-child(5) { display: none; }
+div[class^="profileCustomizationSection_"] div[class^="sectionsContainer_"] div[class^="customizationSection_"]:nth-child(5),
 
 /* Profile editor cosmetics advertisement */
-div[class^="container_"]:has(div[class^="artContainer_"]) { display: none; }
+div[class^="container_"]:has(div[class^="artContainer_"]),
 
 /* Profile editor Nitro advertisement */
-div[class^="premiumFeatureBorder_"] { display: none; }
+div[class^="premiumFeatureBorder_"],
 
 /* Clickable Nitro prompt on profile banner */
-foreignObject > div[class^="clickable_"]:has(> h3[class^="text-sm/medium_"]) { display: none; }
-foreignObject > div[class^="banner_"] > div[class^="clickable_"]:has(> h3[class^="text-sm/medium_"]) { display: none; }
+foreignObject > div[class^="clickable_"]:has(> h3[class^="text-sm/medium_"]),
+foreignObject > div[class^="banner_"] > div[class^="clickable_"]:has(> h3[class^="text-sm/medium_"]),
 
 /* Change Decoration avatar change option */
-div#user-settings-change-avatar-change-avatar-decoration { display: none; }
+div#user-settings-change-avatar-change-avatar-decoration,
 
 /* GIF as avatar option */
-div[class^="imagePickerContainer_"] > div[class^="optionBox_"]:first-child { margin-right: 0px; }
-div[class^="imagePickerContainer_"] > div[class^="optionBox_"]:last-child { display: none; }
-div[class^="root_"]:has(div[class^="imagePickerContainer_"]) { width: 100%; }
+div[class^="imagePickerContainer_"] > div[class^="optionBox_"]:last-child,
 
 /* Nitro settings (yes this is messy, no I don't know how to do it better) */
-div[class^="side_"] > div:has(+ div[class^="premiumTab_"]) { display: none; }
-div[class^="side_"] > div[class^="premiumTab_"] { display: none; }
-div[class^="side_"] > div[class^="premiumTab_"] + div { display: none; }
-div[class^="side_"] > div[class^="premiumTab_"] + div + div { display: none; }
-div[class^="side_"] > div[class^="premiumTab_"] + div + div + div { display: none; }
-div[class^="side_"] > div[class^="premiumTab_"] + div + div + div + div { display: none; }
-div[class^="side_"] > div[class^="premiumTab_"] + div + div + div + div + div { display: none; }
+div[class^="side_"] > div:has(+ div[class^="premiumTab_"]),
+div[class^="side_"] > div[class^="premiumTab_"],
+div[class^="side_"] > div[class^="premiumTab_"] + div,
+div[class^="side_"] > div[class^="premiumTab_"] + div + div,
+div[class^="side_"] > div[class^="premiumTab_"] + div + div + div,
+div[class^="side_"] > div[class^="premiumTab_"] + div + div + div + div,
+div[class^="side_"] > div[class^="premiumTab_"] + div + div + div + div + div,
 
 /* Merch button */
-div[class^="side_"] > div:nth-last-child(7) { display: none; }
+div[class^="side_"] > div:nth-last-child(7),
 
 /* Social links */
-div[class^="side_"] > div[class^="socialLinks_"] { display: none; }
+div[class^="side_"] > div[class^="socialLinks_"],
 
 /* Nitro custom appearance settings */
-div[class^="selectionGroup_"]:has(div[class^="tryItOutButtons"]) { display: none; }
-div[class^="selectionGroup_"]:has(div[class^="tryItOutButtons"]) + div { display: none; }
+div[class^="selectionGroup_"]:has(div[class^="tryItOutButtons"]),
+div[class^="selectionGroup_"]:has(div[class^="tryItOutButtons"]) + div,
 
 /* Change bot tags to read BOT again */
-span[class^="botText_"] { display: none; }
-span[class^="botTag_"]:after { content: "BOT"; }
-span[class^="botTagRegular_"]:after { content: "BOT"; }
+span[class^="botText_"],
 
 /* User badges */
-div[class^="tags_"] div[class^="container_"] { display: none; }
+div[class^="tags_"] div[class^="container_"],
 
-/* Suggested reactions on message hover */
-div[class^="hoverBarButton_"]:has(div.emoji) { display: none; }
-div[class^="hoverBarButton_"]:has(div.emoji) + div { display: none; }
+/* Suggested reactions on message hover and menu */
+div[class^="hoverBarButton_"]:has(div.emoji),
+div[class^="hoverBarButton_"]:has(div.emoji) + div,
+div[class^="menu_"] > div[class^="scroller_"] > div[class^="wrapper_"],
 
 /* Server boost progress bar */
-li:has(div[data-list-item-id^="channels___boosts"]) { display: none; }
+li:has(div[data-list-item-id^="channels___boosts"]),
 
 /* Server icons (like "community server") */
-div[class^="guildIconV2Container_"] { display: none; }
+div[class^="guildIconV2Container_"],
 
 /* Browse Channels button */
-li:has(div[class^="link_"]) { display: none; }
-li:has(div[class^="link_"]) + div { display: none; }
+li:has(div[class^="link_"]),
+li:has(div[class^="link_"]) + div,
 
 /* Discover Servers button */
-ul[data-list-id="guildsnav"] > div > div[class^="listItem_"]:has(div[class^="circleIconButton_"]) { display: none; }
+ul[data-list-id="guildsnav"] > div > div[class^="listItem_"]:has(div[class^="circleIconButton_"]),
 
 /* Boost Server menu option */
-div:has(> div#guild-header-popout-premium-subscribe) { display: none; }
-div:has(> div#guild-header-popout-premium-subscribe) + div { display: none; }
+div:has(> div#guild-header-popout-premium-subscribe),
+div:has(> div#guild-header-popout-premium-subscribe) + div,
 
 /* Server Booster badge */
-div:has(> svg[class^="premiumIcon_"]) { display: none; }
+div:has(> svg[class^="premiumIcon_"]),
 
 /* Avatar decorations */
-svg[class^="avatarDecoration_"] { display: none; }
+svg[class^="avatarDecoration_"],
+
+/* Profile animations */
+div[class^="profileEffects_"],
+
+/* Server banners */
+div[class^="animatedContainer_"],
+
+/* Nitro emoji in picker (WIP) */
+div[class*="categorySectionNitroLocked_"],
+div[class^="nitroTopDividerContainer_"],
+div[class^="upsellContainer_"],
+div:not([class]):has(div[class^="categoryItemLockIconContainer_"]),
+li[role="gridcell"]:has(div[class^="emojiLockIconContainer_"]),
+
+/* Sticker tab in GIF/emoji selector */
+button#sticker-picker-tab,
+
+/* Activities */
+div[class^="body_"] > div[class^="biteSizeOverlayBackground_"],
+div[aria-label="Activity"],
+div[class^="overlayBackground_"]:has(> div[class^="actions_"]),
+div[class^="activityText_"]:has(strong),
+div[class^="activity_"] > svg,
+
+/* Bot "Add App" button in profile */
+div[class^="biteSizeInner_"] div[class^="buttons_"] > button[class^="button_"],
+div[class^="messageIconButton_"] + button,
+
+/* Bot commands in profile */
+div[class^="biteSizeInner_"] > div[class^="body_"] > section[class^="section_"]:has(ul),
+div[class^="userProfileModalInner_"] > div[class^="body_"] section[class^="section_"]:has(ul),
+
+/* Status thought bubble (still shows statuses) */
+div[class^="statusBubbleOuter_"]::before,
+div[class^="statusBubbleOuter_"]::after,
+
+/* File upload Nitro prompt */
+div[class^="root_"] > div[class^="artContainer_"] > img,
+div[class^="contentContainer_"] > div[class^="bodyContent_"]:has(> h2) > div > div > div,
+div[class^="flex_"]:has(button[class*="tier2Gradient_"]),
+
+/* Character count Nitro prompt */
+div[class^="characterCount_"] > div[class^="root_"],
+div[class^="contentContainer_"] > div[class^="bodyContent_"]:has(> h2) > div > p:last-child,
+div[class^="flex_"]:has(button[class*="colorGreen_"]) > div[class^="primaryActions_"],
+div[class^="hoverButton_"]:has(> div[class^="lottieIcon_"]),
+
+/* Disable GIFs and GIF tag in profiles */
+img[src*="gif"],
+div[class^="gifTag_"],
+
+/* Hide Super Reactions (WIP, hides all reactions on any message with super reactions) */
+div[id^="message-accessories-"]:has(div[class^="burstGlow_"]),
+
+/* Hide Activities button in VCs */
+div[class^="actionButtons_"] > button:nth-child(3) { display: none; }
+
+
+/* Change bot tags to read BOT again */
+span[class^="botTag_"]:after { content: "BOT"; }
+span[class^="botTagRegular_"]:after { content: "BOT"; }
 
 /* Profile banners */
 div[class^="banner_"] { background-image: none !important; }
 
-/* Profile animations */
-div[class^="profileEffects_"] { display: none; }
-
 /* Server banners */
-div[class^="animatedContainer_"] { display: none; }
 div#channels > ul:has(div[style="height: 84px;"]) { margin-top: -84px; }
 
-/* Nitro emoji in picker (WIP) */
-div[class*="categorySectionNitroLocked_"] { display: none; }
-div[class^="nitroTopDividerContainer_"] { display: none; }
-div[class^="upsellContainer_"] { display: none; }
-div:not([class]):has(div[class^="categoryItemLockIconContainer_"]) { display: none; }
-li[role="gridcell"]:has(div[class^="emojiLockIconContainer_"]) { display: none; }
-
-/* Sticker tab in GIF/emoji selector */
-button#sticker-picker-tab { display: none; }
-
-/* Activities */
-div[class^="body_"] > div[class^="biteSizeOverlayBackground_"] { display: none; }
-div[aria-label="Activity"] { display: none; }
-div[class^="overlayBackground_"]:has(> div[class^="actions_"]) { display: none; }
-div[class^="activityText_"]:has(strong) { display: none; }
-div[class^="activity_"] > svg { display: none; }
-
-/* Bot "Add App" button in profile */
-div[class^="biteSizeInner_"] div[class^="buttons_"] > button[class^="button_"] { display: none; }
-div[class^="messageIconButton_"] + button { display: none; }
-
-/* Bot commands in profile */
-div[class^="biteSizeInner_"] > div[class^="body_"] > section[class^="section_"]:has(ul) { display: none; }
-div[class^="userProfileModalInner_"] > div[class^="body_"] section[class^="section_"]:has(ul) { display: none; }
-
-/* Status thought bubble (still shows statuses) */
-div[class^="statusBubbleOuter_"]::before { display: none; }
-div[class^="statusBubbleOuter_"]::after { display: none; }
-
 /* File upload Nitro prompt */
-div[class^="root_"] > div[class^="artContainer_"] > img { display: none; }
-div[class^="contentContainer_"] > div[class^="bodyContent_"]:has(> h2) > div > div > div { display: none; }
 div[class^="root_"]:has(div[class^="artContainer_"]) { width: 100%; }
-div[class^="flex_"]:has(button[class*="tier2Gradient_"]) { display: none; }
 
 /* Character count Nitro prompt */
-div[class^="characterCount_"] > div[class^="root_"] { display: none; }
-div[class^="contentContainer_"] > div[class^="bodyContent_"]:has(> h2) > div > p:last-child { display: none; }
-div[class^="flex_"]:has(button[class*="colorGreen_"]) > div[class^="primaryActions_"] { display: none; }
 div[class^="root_"]:has(button[class*="colorGreen_"]) { padding-top: 50px; min-height: 1px !important; }
-div[class^="hoverButton_"]:has(> div[class^="lottieIcon_"]) { display: none; }
-
-/* Disable GIFs and GIF tag in profiles */
-img[src*="gif"] { display: none; }
-div[class^="gifTag_"] { display: none; }
 
 /* Disable custom profile theme styling (WIP, doesn't fully work yet) */
 div[class^="biteSizeOuter_"] {
@@ -181,8 +195,6 @@ div[class^="biteSizeOuter_"] {
     --profile-role-pill-border-color: var(--interactive-normal) !important;
 }
 
-/* Hide Super Reactions (WIP, hides all reactions on any message with super reactions) */
-div[id^="message-accessories-"]:has(div[class^="burstGlow_"]) { display: none; }
-
-/* Hide Activities button in VCs */
-div[class^="actionButtons_"] > button:nth-child(3) { display: none; }
+/* GIF as avatar option */
+div[class^="imagePickerContainer_"] > div[class^="optionBox_"]:first-child { margin-right: 0px; }
+div[class^="root_"]:has(div[class^="imagePickerContainer_"]) { width: 100%; }
